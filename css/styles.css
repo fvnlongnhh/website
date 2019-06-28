@@ -1,0 +1,127 @@
+@charset "UTF-8";
+@import "base.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap&subset=latin-ext,vietnamese');
+
+table{width: 100%}
+p {margin: 0 0 30px;}
+div > p:last-child{margin-bottom: 0}
+*{box-sizing: border-box;outline: none;} 
+img{max-width: 100%;vertical-align: middle;}
+table,
+select,
+input,
+button,
+textarea{color: #333;line-height: 1.4;}
+
+li li,li dt,li dd,li input,li select,li button,li textarea,li p,li th,li td,
+dt li,dt dt,dt dd,dt input,dt select,dt button,dt textarea,dt p,dt th,dt td,
+dd li,dd dt,dd dd,dd input,dd select,dd button,dd textarea,dd p,dd th,dd td,
+th li,th dt,th dd,th input,th select,th button,th textarea,th p,th th,th td,
+td li,td dt,td dd,td input,td select,td button,td textarea,td p,td th,td td,
+p input{ font-size: 100%;}
+
+/*==========================================================================*/
+/*                            Container                                     */
+/*==========================================================================*/
+html{background: none;}
+body{color:#333;font-family: 'Roboto Condensed', sans-serif;font-size: 14px;font-weight: 400;background: #f5f8f9;letter-spacing: 0.05em}
+.inner {width:1100px;margin: 0 auto;}
+#wrapper {min-width:1180px;overflow: hidden}
+a{text-decoration: none;color: #333;}
+a:hover{color: #333;}
+
+p,
+dd,
+dt,
+li,
+th,
+td{line-height: 1.8em}
+
+/*==========================================================================*/
+/*                               Header                                     */
+/*==========================================================================*/
+#index{height: 100vh;background: url('../images/idx_bg.jpg') center no-repeat;background-size: cover;}
+#index header{margin-top: 5%}
+#index header h1{text-align: center;}
+
+.sub header{position: fixed;top: 0;left: 0;width: 100%;background: #fff;box-shadow: 0 0 8px #ccc;height: 100px;padding: 0 30px;display: flex;align-items: center;}
+.sub header h1{margin-right: 30px;}
+.sub header h1 a{}
+.sub header h1 a img{max-width: 100%;}
+
+.sub .head_search{}
+.sub .head_search span{margin:0 auto ;width: 500px;display: block;background: #fff;border-radius: 50px;border:1px solid #ccc;}
+.sub .head_search span:hover,
+.sub .head_search span:focus{box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28)}
+.sub .head_search span input{background: none;border: none;outline: none;display: block;width: 100%;padding: 15px;font-size: 14px;}
+.sub .head_search span input::placeholder{color: #999}
+
+
+.sub main{margin-top: 100px}
+/*==========================================================================*/
+/*                               ALL                                        */
+/*==========================================================================*/
+/* FIX PADDING */
+.pdb30{padding: 0 0 30px}
+.pdb50{padding: 0 0 50px;}
+.mgb0{margin-bottom: 0;}
+.mgb30{margin-bottom: 30px;}
+.mgb50{margin-bottom: 50px;}
+.fs12{font-size: 12px;}
+.fs16{font-size: 16px;}
+.fs18{font-size: 18px;}
+.fs20{font-size: 20px;}
+/*==========================================================================*/
+/*                               Main                                       */
+/*==========================================================================*/
+main{position: relative;z-index: 2}
+.ttl{}
+.ttl h3{line-height: 1.4em;font-size: 32px;color:#073265;margin-bottom: 0px;}
+
+.idx_search{}
+.idx_search span{margin:50px auto ;width: 500px;display: block;background: #fff;border-radius: 50px;}
+.idx_search span:hover,
+.idx_search span:focus{box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28)}
+.idx_search span input{background: none;border: none;outline: none;display: block;width: 100%;padding: 15px;font-size: 14px;}
+.idx_search span input::placeholder{color: #999}
+
+.idx_search_x2{background: rgba(255,255,255,0.4);padding: 30px 15px;border-radius: 10px;}
+.idx_search_x2 p{font-size: 24px;text-align: center;text-transform: uppercase;font-weight: 700}
+.idx_search_x2 ul{display: flex;flex-wrap: wrap;justify-content: center;width: 100%;margin:0 auto;}
+.idx_search_x2 ul li{margin:0 10px 20px;}
+.idx_search_x2 ul li a{padding: 5px 20px;background: #fff;border-radius: 30px;display: inline-block;transition: all ease 0.3s;text-transform: capitalize;}
+.idx_search_x2 ul li a:hover{background: #333;color: #fff;}
+
+
+
+
+
+/*==========================================================================*/
+/*                               Footer                                     */
+/*==========================================================================*/
+footer{}
+footer address{text-align: center;padding:0;font-size: 12px;width: 100%;position: absolute;bottom: 10px;left: 0;}
+
+/* CHORME ONLY  */
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    
+}
+
+/* FIREFOX CSS */
+@supports (-moz-appearance:none) and (-webkit-appearance:none)
+{
+  
+}
+
+/* IE STUPID CSS */
+@media screen\0 {
+	
+}
+
+/* EDGE 12+ CSS */
+@supports (-ms-ime-align:auto) {
+	
+}
+
+
+

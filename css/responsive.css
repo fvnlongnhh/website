@@ -1,0 +1,78 @@
+/* responsive */
+.box_sp {display: none;}
+.box_pc {display: block;}
+@media screen and (min-width: 751px) {
+
+}
+
+@media screen and (max-width: 750px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    input,
+    button,
+    textarea,
+    select,
+    p,
+    blockquote,
+    th,
+    td,
+    pre,
+    address,
+    li,
+    dt,
+    dd{font-size: 14px;line-height: 1.6em;}
+
+
+
+    #wrapper,
+    #header,
+    #main,
+    #footer,
+    .inner {width: 100% !important;min-width: inherit !important;}
+    .inner {box-sizing: border-box;padding: 0 15px;}
+    .box_sp {display: block;}
+    .box_pc {display: none;}
+    /*---*/
+
+
+    /*==========================================================================*/
+    /*                               ALL                                        */
+    /*==========================================================================*/
+    #header{padding-bottom: 0}
+    #header h1{display: none}
+
+    #gnavi{display: none;}
+    
+    .ttl h3{font-size: 24px;}
+
+    .btn a{width: 290px;}
+    /*==========================================================================*/
+    /*                               MAIN                                       */
+    /*==========================================================================*/
+    
+}
+
+@media screen and (max-width: 560px) {
+   
+    
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 420px) {
+
+}
+
+@media screen and (max-width: 380px) {
+    .btn{padding: 0;width: 100%;box-sizing: border-box}
+}
+
+@media screen and (max-width: 360px) {
+
+}
