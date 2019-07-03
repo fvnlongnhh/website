@@ -92,9 +92,9 @@ main{position: relative;z-index: 2}
 .idx_search_x2 ul li a{padding: 5px 20px;background: #fff;border-radius: 30px;display: inline-block;transition: all ease 0.3s;text-transform: capitalize;}
 .idx_search_x2 ul li a:hover{background: #333;color: #fff;}
 
-.sub h3{font-size: 32px;text-align: center;text-transform: capitalize;font-weight: 300}
+.sub h3{font-size: 32px;text-align: center;text-transform: capitalize;font-weight: 300;margin-bottom: 50px}
 .sub .product_list{display: flex;flex-wrap: wrap;}
-.sub .product_item{background: #fff;width: calc((100% - 60px) / 3);margin-right: 30px}
+.sub .product_item{background: #fff;width: calc((100% - 60px) / 3);margin:0 30px 50px 0}
 .sub .product_item:nth-child(3n + 3){margin-right: 0}
 .sub .product_item .prd_img{width: 100%}
 .sub .product_item .prd_img a{display: flex;width:100%;height: 250px;justify-content: center;align-items: center;border-radius: 5px 5px 0 0;overflow: hidden}
@@ -102,11 +102,18 @@ main{position: relative;z-index: 2}
 
 .sub .product_item .prd_txt{padding: 15px}
 .sub .product_item .prd_txt p{margin-bottom: 0}
-.sub .product_item .prd_txt p a{color: #ff551a;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;display: inline-block;font-size: 18px;position: relative;}
+.sub .product_item .prd_txt p a{color: #ff551a;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;display: inline-block;font-size: 18px;position: relative;vertical-align: middle;line-height: 1.5em}
 .sub .product_item .prd_txt p a::before{width: 0;height: 1px;background: #ff551a;content: '';position: absolute;bottom: 0;left: 0;transition: all ease 0.3s}
 .sub .product_item .prd_txt p a:hover::before{width: 100%}
-.sub .product_item .prd_txt .price{font-size: 20px;}
+.sub .product_item .prd_txt .name{line-height: 1em}
+.sub .product_item .prd_txt .price{font-size: 20px;line-height: 1em}
+.sub .product_item .prd_txt .local{}
 .sub .product_item .prd_txt .des{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;display: block;position: relative;width: 100%}
+.sub .product_item .prd_txt ul{margin:30px 0 15px;padding-bottom: 15px;border-bottom: 1px solid #ededed}
+.sub .product_item .prd_txt ul li{position: relative;margin-bottom: 20px;height: 30px;display: flex;align-items: center;}
+.sub .product_item .prd_txt ul li:last-child{margin-bottom: 0}
+.sub .product_item .prd_txt ul li span{position: absolute;top: 0;right: 0;width: 30px;height: 30px;background: #ff551a;color: #fff;border-radius: 4px;text-align: center;display: flex;justify-content: center;align-items: center;}
+.sub .product_item .prd_txt ul li img{display: inline-block;vertical-align: middle;margin-right: 10px;width: 20px}
 
 /*==========================================================================*/
 /*                               Footer                                     */
