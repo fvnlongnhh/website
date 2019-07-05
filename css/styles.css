@@ -24,7 +24,7 @@ p input{ font-size: 100%;}
 /*                            Container                                     */
 /*==========================================================================*/
 html{background: none;}
-body{color:#333;font-family: 'Roboto Condensed', sans-serif;font-size: 14px;font-weight: 400;background: #f5f8f9;letter-spacing: 0.05em}
+body{color:#333;font-family: 'Roboto Condensed', sans-serif;font-size: 16px;font-weight: 400;background: #f5f8f9;letter-spacing: 0.05em}
 .inner {width:1200px;margin: 0 auto;}
 #wrapper {min-width:1280px;overflow: hidden}
 a{text-decoration: none;color: #333;}
@@ -44,7 +44,7 @@ td{line-height: 1.8em}
 #index header{margin-top: 5%}
 #index header h1{text-align: center;}
 
-.sub header{position: fixed;top: 0;left: 0;width: 100%;background: #fff;box-shadow: 0 0 8px #ccc;height: 100px;padding: 0 30px;display: flex;align-items: center;}
+.sub header{position: fixed;top: 0;left: 0;width: 100%;background: #fff;box-shadow: 0 0 8px #ccc;height: 100px;padding: 0 30px;display: flex;align-items: center;z-index: 3;}
 .sub header h1{margin-right: 30px;}
 .sub header h1 a{}
 .sub header h1 a img{max-width: 100%;}
@@ -115,11 +115,40 @@ main{position: relative;z-index: 2}
 .sub .product_item .prd_txt ul li span{position: absolute;top: 0;right: 0;width: 30px;height: 30px;background: #ff551a;color: #fff;border-radius: 4px;text-align: center;display: flex;justify-content: center;align-items: center;}
 .sub .product_item .prd_txt ul li img{display: inline-block;vertical-align: middle;margin-right: 10px;width: 20px}
 
+.sub .prd_detail{}
+.sub .prd_detail h3{font-family:"Oswald", sans-serif;text-align:left;text-transform:capitalize;margin-bottom:15px}
+.sub .prd_ttl{display:block;position: relative;}
+.sub .prd_ttl h3{text-align:left;font-size:24px;font-weight:300;margin-bottom:0}
+.sub .prd_ttl p{margin-bottom: 0}
+.sub .prd_ttl .price{text-align:left;font-family:"Oswald", sans-serif;font-size:28px;font-weight:300;position:absolute;right:0;top:0;color: #666;}
+.sub .prd_ttl .local{}
+
+.sub .prd_img{margin-top:30px;padding-top:30px;border-top:1px dashed #dcdee3;}
+.sub .prd_img ul{display: flex;justify-content: space-between;flex-wrap: wrap;}
+.sub .prd_img li{width:32%;margin:0 2% 30px 0;background:#fff;position:relative}
+.sub .prd_img li:nth-child(3n + 3){margin-right: 0}
+.sub .prd_img li a{width: 100%;height: 216px;display: flex;align-items: center;justify-content: center;text-align: center;}
+.sub .prd_img li a img{flex-shrink: 0;border-radius: 5px;}
+.sub .prd_img li:hover{opacity: 0.7;}
+
+
+.sub .prd_ct{padding-top:15px;border-top:1px dashed #dcdee3}
+.sub .prd_ct .big{font-size: 18px;font-family:"Oswald", sans-serif;text-transform: capitalize;margin-bottom: 15px}
+.sub .prd_ct p{margin-bottom:15px;}
+.sub .prd_ct ul:last-child,
+.sub .prd_ct p:last-child{margin-bottom: 0}
+
+.sub .list_check{display:block;}
+.sub .list_check li{display:inline-block;width:32%;padding-left:25px;margin-bottom:10px;position:relative;}
+.sub .list_check li::before{width: 20px;height: 20px;position: absolute;top: 0;left: 0;content: '';background: url('../images/ic_check.png') center no-repeat;background-size: cover;content: ''}
+
+
 /*==========================================================================*/
 /*                               Footer                                     */
 /*==========================================================================*/
 footer{}
 footer address{text-align: center;padding:0;font-size: 12px;width: 100%;position: absolute;bottom: 10px;left: 0;}
+.sub footer address{position: relative;bottom: inherit;left: inherit;}
 
 /* CHORME ONLY  */
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
