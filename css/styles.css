@@ -131,7 +131,6 @@ main{position: relative;z-index: 2}
 .sub .prd_detail_img li a img{flex-shrink: 0;border-radius: 5px;}
 .sub .prd_detail_img li:hover{opacity: 0.7;}
 
-
 .sub .prd_ct{padding-top:15px;border-top:1px dashed #dcdee3}
 .sub .prd_ct .big{font-size: 18px;font-family:"Oswald", sans-serif;text-transform: capitalize;margin-bottom: 15px}
 .sub .prd_ct p{margin-bottom:15px;}
