@@ -2,20 +2,26 @@
 .box_sp {display: none;}
 .box_pc {display: block;}
 
-@media screen and (min-width: 769px) {
-    .sub .news_top ul li a:hover,
-    .sub .news_list ul li .news_img a:hover,
-    .sub .news_other ul li a:hover,
-    .sub .news_adv a:hover{opacity: 0.7;cursor: pointer;}
+@media screen and (max-width: 1280px) {
+    .adv_poster_r,
+    .adv_poster_l{display: none;}
+}
 
-    .sub .news_other ul li a:hover,
+@media screen and (min-width: 769px) {
+    #btn_top:hover,
+    .news_top ul li a:hover,
+    .news_list ul li .news_img a:hover,
+    .news_other ul li a:hover,
+    .news_adv a:hover{opacity: 0.7;cursor: pointer;}
+
+    .news_other ul li a:hover,
     .sub .breadcrumb ul li a:hover{color: #ea433c;}
 
-    .sub footer .item-footer button:hover{border-color:#fff;color:#b62124;background:#fff}
-    .sub footer .item-footer input:hover,
-    .sub footer .item-footer input:focus,
-    .sub footer .item-footer textarea:hover,
-    .sub footer .item-footer textarea:focus{border-color:#000;color:#000}
+    footer .item-footer button:hover{border-color:#fff;color:#b62124;background:#fff}
+    footer .item-footer input:hover,
+    footer .item-footer input:focus,
+    footer .item-footer textarea:hover,
+    footer .item-footer textarea:focus{border-color:#000;color:#000}
 }
 
 @media screen and (max-width: 768px) {
@@ -75,9 +81,9 @@
     .sub h3{font-size: 24px;margin-bottom: 30px;}
     
     /* PRODUCT PAGES */
-    .sub .product_list{justify-content: space-between;}
-    .sub .product_item{width: calc((100vw - 50px) / 2);margin:0 0 50px;}
-    .sub .product_item .prd_img a{height: calc((100vw - 50px) / 2 * 2 / 3);}
+    .product_list{justify-content: space-between;}
+    .product_item{width: calc((100vw - 50px) / 2);margin:0 0 50px;}
+    .product_item .prd_img a{height: calc((100vw - 50px) / 2 * 2 / 3);}
     
     .sub .prd_ttl h3{font-size: 20px}
     .sub .prd_ttl .price{position: relative;top: inherit;right: inherit;font-size: 24px;}
@@ -88,34 +94,34 @@
     .sub .prd_detail_img li a{height: calc((100vw - 50px) / 2 * 2 / 3);}
 
     /* NEWS PAGES */
-    .sub .news_right{display: none;}
-    .sub .news_left{width: 100%;}
+    .news_right{display: none;}
+    .news_left{width: 100%;}
 
-    .sub .news_top{}
-    .sub .news_top ul{flex-wrap: wrap;}
-    .sub .news_top ul li{width: 100%}
-    .sub .news_top ul li a{align-items: flex-start;height: auto;border:1px solid #ddd;padding: 10px;}
-    .sub .news_top ul li a img{width: 40vw;}
-    .sub .news_top ul li a span{position: relative;bottom: inherit;left: inherit;height: auto;background: none;text-shadow: none;color: #666;font-size: 20px;line-height: 1.5em;display: flex;height: 100%;align-items: center;width: 60vw;}
+    .news_top{}
+    .news_top ul{flex-wrap: wrap;}
+    .news_top ul li{width: 100%}
+    .news_top ul li a{align-items: flex-start;height: auto;border:1px solid #ddd;padding: 10px;}
+    .news_top ul li a img{width: 40vw;}
+    .news_top ul li a span{position: relative;bottom: inherit;left: inherit;height: auto;background: none;text-shadow: none;color: #666;font-size: 20px;line-height: 1.5em;display: flex;height: 100%;align-items: center;width: 60vw;}
 
-    .sub .news_list ul li{position: relative;padding: 10px;}
-    .sub .news_list ul li .news_img{width: 40vw;height: auto;}
-    .sub .news_list ul li .news_txt{width: 60vw;padding: 0 15px 15px;}
-    .sub .news_list ul li .news_txt h3{font-size: 18px;height: 48px;overflow: hidden;margin-bottom: 10px;}
-    .sub .news_list ul li .news_txt p{height: 50px;overflow: hidden}
-    .sub .news_list ul li .news_txt p.date{font-size: 12px;height: auto;}
-    .sub .news_list ul li .news_txt p.date a{color: #ea433c;}
-    .sub .news_list ul li .news_txt p.date a span{display: none;}
+    .news_list ul li{position: relative;padding: 10px;}
+    .news_list ul li .news_img{width: 40vw;height: auto;}
+    .news_list ul li .news_txt{width: 60vw;padding: 0 15px 15px;}
+    .news_list ul li .news_txt h3{font-size: 18px;height: 48px;overflow: hidden;margin-bottom: 10px;}
+    .news_list ul li .news_txt p{height: 50px;overflow: hidden}
+    .news_list ul li .news_txt p.date{font-size: 12px;height: auto;}
+    .news_list ul li .news_txt p.date a{color: #ea433c;}
+    .news_list ul li .news_txt p.date a span{display: none;}
     
-    .sub .news_detail_ct h3{font-size: 24px;}
-    .sub .news_other ul li{width: 48%;margin:0 0 15px;height: auto;}
-    .sub .news_other ul{justify-content: space-between;}
+    .news_detail_ct h3{font-size: 24px;}
+    .news_other ul li{width: 48%;margin:0 0 15px;height: auto;}
+    .news_other ul{justify-content: space-between;}
 
     /* FOOTER */
-    .sub footer{padding: 30px 0 15px}
-    .sub footer .inner{flex-wrap: wrap;}
-    .sub footer .item-footer{width: 48%;margin:0 0 30px;}
-    .sub footer .item-footer:last-child{margin-bottom: 0}
+    footer{padding: 30px 0 15px}
+    footer .inner{flex-wrap: wrap;}
+    footer .item-footer{width: 48%;margin:0 0 30px;}
+    footer .item-footer:last-child{margin-bottom: 0}
 
     #btn_top{width: 25px;height: 25px;right: 15px;bottom: 30px}
 
@@ -128,20 +134,20 @@
 }
 
 @media screen and (max-width: 480px) {
-    .sub .product_item,
-    .sub footer .item-footer{width: 100%}
+    .product_item,
+    footer .item-footer{width: 100%}
 
-    .sub .product_item .prd_img a{height: calc((100vw - 30px) * 2 / 3) }
+    .product_item .prd_img a{height: calc((100vw - 30px) * 2 / 3) }
 
-    .sub .news_top ul li a{flex-wrap: wrap}
-    .sub .news_top ul li a img{width: auto;}
-    .sub .news_top ul li a span{width: 100%;padding: 0;margin-top: 10px;}
+    .news_top ul li a{flex-wrap: wrap}
+    .news_top ul li a img{width: auto;}
+    .news_top ul li a span{width: 100%;padding: 0;margin-top: 10px;}
 
-    .sub .news_list ul li{flex-wrap: wrap;}
-    .sub .news_list ul li .news_img{width: 100%;text-align: center;margin-bottom: 10px;}
-    .sub .news_list ul li .news_txt{width: 100%;padding: 0}
-    .sub .news_list ul li .news_txt h3,
-    .sub .news_list ul li .news_txt p{height: auto;overflow: inherit;}
+    .news_list ul li{flex-wrap: wrap;}
+    .news_list ul li .news_img{width: 100%;text-align: center;margin-bottom: 10px;}
+    .news_list ul li .news_txt{width: 100%;padding: 0}
+    .news_list ul li .news_txt h3,
+    .news_list ul li .news_txt p{height: auto;overflow: inherit;}
 }
 
 @media screen and (max-width: 420px) {
