@@ -16,6 +16,8 @@
 
     .news_other ul li a:hover,
     .sub .breadcrumb ul li a:hover{color: #ea433c;}
+    .prd_ct .big:hover{color: #000;cursor: pointer;}
+    .prd_detail_img p a:hover{text-decoration: underline;cursor: pointer;}
 
     footer .item-footer button:hover{border-color:#fff;color:#b62124;background:#fff}
     footer .item-footer input:hover,

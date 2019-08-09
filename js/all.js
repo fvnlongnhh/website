@@ -11,6 +11,16 @@ $(window).load(function(){
 	        $('.adv_poster_r').removeClass('active');
 	    }
 	});
+
+
+	$('.prd_detail_img p a').click(function(){
+		$(this).parents().find('ul').toggleClass('active');
+	});
+
+	$('.prd_ct .big').click(function(){
+		$('.prd_content').stop().slideUp();
+		$(this).next('.prd_content').stop().slideToggle(500);
+	});
 });
 
 // BACK TO TOP
