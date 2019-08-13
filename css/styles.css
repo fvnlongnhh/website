@@ -154,8 +154,9 @@ main{position: relative;z-index: 2}
 .prd_ct .info,
 .prd_ct .big{font-size: 18px;font-family:"Oswald", sans-serif;text-transform: capitalize;margin-bottom: 20px;color: #ea433c;border-bottom: 1px solid #ccc;padding-bottom: 10px;}
 .prd_ct p{margin-bottom:15px;}
+.prd_ct .prd_info{margin-bottom: 30px;background: #fff;padding: 15px;}
 .prd_ct .prd_content{display: none;margin-bottom: 30px;background: #fff;padding: 15px;}
-.prd_ct .prd_content.active{display: block}
+.prd_ct .prd_content.active{display: block !important}
 
 .prd_ct ul:last-child,
 .prd_ct p:last-child{margin-bottom: 0}
