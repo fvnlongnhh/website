@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="vn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=-100%, user-scalable=yes" />
+<meta name="format-detection" content="telephone=no">
+<title>Chi tiết</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+</head>
+
+<body id="prd_detail_blogspot">
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<!-- STYLE -->
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap&subset=latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap&subset=vietnamese');
+html{background: none;}
+body{color:#333;font-family: 'Roboto Condensed', sans-serif;font-size: 16px;font-weight: 400;background: #f5f8f9;letter-spacing: 0.05em}
+table{width: 100%}
+p {margin: 0 0 30px;}
+div > p:last-child{margin-bottom: 0}
+*{box-sizing: border-box;outline: none;} 
+img{max-width: 100%;vertical-align: middle;}
+table,
+select,
+input,
+button,
+textarea{color: #333;line-height: 1.4;}
+li{list-style: none;}
+
+
+li li,li dt,li dd,li input,li select,li button,li textarea,li p,li th,li td,
+dt li,dt dt,dt dd,dt input,dt select,dt button,dt textarea,dt p,dt th,dt td,
+dd li,dd dt,dd dd,dd input,dd select,dd button,dd textarea,dd p,dd th,dd td,
+th li,th dt,th dd,th input,th select,th button,th textarea,th p,th th,th td,
+td li,td dt,td dd,td input,td select,td button,td textarea,td p,td th,td td,
+p input{ font-size: 100%;}
+
+p,
+dd,
+dt,
+li,
+th,
+td{line-height: 1.8em}
+
+
+img{max-width: 100%}
+.inner{width: 1000px;margin:0 auto;}
+
+.prd_detail{}
+.prd_detail h3{font-family:"Oswald", sans-serif;text-align:left;text-transform:capitalize;margin-bottom:15px}
+.prd_ttl{display:block;position: relative;}
+.prd_ttl h3{text-align:left;font-size:24px;font-weight:300;margin-bottom:0}
+.prd_ttl p{margin-bottom: 0}
+.prd_ttl .price{text-align:left;font-family:"Oswald", sans-serif;font-size:28px;font-weight:300;position:absolute;right:0;top:0;color: #666;}
+.prd_ttl .local{}
+
+.prd_detail_img{margin-top:30px;padding-top:30px;border-top:1px dashed #dcdee3;}
+.prd_detail_img p{}
+.prd_detail_img p span{color: #ea433c;}
+.prd_detail_img p a{color: #ea433c;}
+.prd_detail_img ul{display: flex;justify-content: space-between;flex-wrap: wrap;transition: all ease 0.4s;opacity: 0;visibility: hidden;height: 0;}
+.prd_detail_img ul.active{visibility: visible;opacity: 1;height: auto}
+.prd_detail_img li{width:32%;margin:0 2% 30px 0;background:#fff;position:relative}
+.prd_detail_img li:nth-child(3n + 3){margin-right: 0}
+.prd_detail_img li a{width: 100%;height: 216px;display: flex;align-items: center;justify-content: center;text-align: center;}
+.prd_detail_img li a img{flex-shrink: 0;border-radius: 5px;}
+.prd_detail_img li:hover{opacity: 0.7;}
+
+.prd_ct{padding-top:15px;border-top:1px dashed #dcdee3}
+.prd_ct .info,
+.prd_ct .big{font-size: 18px;font-family:"Oswald", sans-serif;text-transform: capitalize;margin-bottom: 20px;color: #ea433c;border-bottom: 1px solid #ccc;padding-bottom: 10px;}
+.prd_ct p{margin-bottom:15px;}
+.prd_ct .prd_info{margin-bottom: 30px;background: #fff;padding: 15px;}
+.prd_ct .prd_content{display: none;margin-bottom: 30px;background: #fff;padding: 15px;}
+.prd_ct .prd_content.active{display: block !important}
+
+.prd_ct ul:last-child,
+.prd_ct p:last-child{margin-bottom: 0}
+.prd_ct .big:hover,
+.prd_detail_img p a:hover{text-decoration: underline;cursor: pointer;}
+</style>
+
+<div id="wrapper">
+    <!-- main start -->
+    <main>
+        <div class="inner">
+            <div class="adv_detail">
+                <p><a href="#"><img src="./images/qc_1000x400.jpg" alt="Tiêu đề quảng cáo"></a></p>
+            </div>
+
+            <section class="prd_detail">
+                <div class="prd_ttl">
+                    <h3>Beach House, Florida, USA</h3>
+                    <p class="price">5.000.000VND</p>
+                    <p class="local"><label>United States / Minnesota</label></p>
+                </div>
+
+                <div class="prd_detail_img">
+                    <p>Hiện tại có <span>12</span> hình . <a>Click vào đây</a> để xem hình chi tiết</p>
+                    <ul>
+                        <li><a href="./images/cate1.jpg" data-lightbox="Gallery" data-title="Hình nhà"><img src="./images/cate1.jpg"></a></li>
+                        <li><a href="./images/cate2.jpg" data-lightbox="Gallery" data-title="Hình nhà"><img src="./images/cate2.jpg"></a></li>
+                        <li><a href="./images/cate3.jpg" data-lightbox="Gallery" data-title="Hình nhà"><img src="./images/cate3.jpg"></a></li>
+                        <li><a href="./images/cate4.jpg" data-lightbox="Gallery" data-title="Hình nhà"><img src="./images/cate4.jpg"></a></li>
+                        <li><a href="./images/cate5.jpg" data-lightbox="Gallery" data-title="Hình nhà"><img src="./images/cate5.jpg"></a></li>
+                        <li><a href="./images/cate6.jpg" data-lightbox="Gallery" data-title="Hình nhà"><img src="./images/cate6.jpg"></a></li>
+                        <li><a href="./images/cate7.jpg" data-lightbox="Gallery" data-title="Hình nhà"><img src="./images/cate7.jpg"></a></li>
+                        <li><a href="./images/cate8.jpg" data-lightbox="Gallery" data-title="Hình nhà"><img src="./images/cate8.jpg"></a></li>
+                        <li><a href="./images/cate9.jpg" data-lightbox="Gallery" data-title="Hình nhà"><img src="./images/cate9.jpg"></a></li>
+                        <li><a href="./images/cate10.jpg" data-lightbox="Gallery" data-title="Hình nhà"><img src="./images/cate10.jpg"></a></li>
+                    </ul>
+                </div>
+
+                <div class="prd_ct">
+                    <p class="info">Thông Tin Cơ Bản</p>
+                    <div class="prd_info">
+                        <p>Mặt tiền Huỳnh Văn Bánh, đường rộng 15m</p>
+                        <p>Mặt tiền bên hông quay ra hẻm 3m sạch sẽ</p>
+                        <p>Từ nhà ra trục đường Nguyễn Văn Trỗi chỉ 150m</p>
+                        <p>Đường 2 chiều, rộng, thoáng</p>
+                        <p>Khu vực cao cấp, nhiều cao ốc văn phòng, nhà hàng, thương hiệu lớn, kinh doanh thương mại sầm uất</li>
+                        <p>Từ nhà rất tiện ra sân bay, ga tàu, metro, bus </p>
+                        <p>Thuận lợi để kinh doanh bất kể ngành nghề gì</p>
+                    </div>
+                    <p class="big">Vị trí</p>
+                    <div class="prd_content">
+                        <p>Mặt tiền Huỳnh Văn Bánh, đường rộng 15m</p>
+                        <p>Mặt tiền bên hông quay ra hẻm 3m sạch sẽ</p>
+                        <p>Từ nhà ra trục đường Nguyễn Văn Trỗi chỉ 150m</p>
+                        <p>Đường 2 chiều, rộng, thoáng</p>
+                        <p>Khu vực cao cấp, nhiều cao ốc văn phòng, nhà hàng, thương hiệu lớn, kinh doanh thương mại sầm uất</li>
+                        <p>Từ nhà rất tiện ra sân bay, ga tàu, metro, bus </p>
+                        <p>Thuận lợi để kinh doanh bất kể ngành nghề gì</p>
+                    </div>
+                    <p class="big">Đặc điểm</p>
+                    <div class="prd_content">
+                        <p>Diện tích: 63,8 m2</p>
+                        <p>Ngang 4,8m, đặc biệt nở hậu 6,7m, dài 11,3m,</p>
+                        <p>Nhà đúc thật 1 trệt 2 lầu, mỗi tầng đều có phòng ngủ và WC</p>
+                        <p>DTSD hiện tại: 147,1m2</p>
+                        <p>Hẻm bên cạnh lộ giới chỉ vào nhà 0,5m, đã xây nhà thụt vào, phần còn lại làm hành lang.</p>
+                        <p>Hướng Tây Nam</p>
+                        <p>Sổ hồng riêng, công chứng ngay (xem hình đính kèm)</p>
+                    </div>
+                    <p class="big">Tiện ích</p>
+                    <div class="prd_content">
+                        <ul class="list_check">
+                            <li>Tủ lạnh</li>
+                            <li>Wifi</li>
+                            <li>Máy lạnh</li>
+                            <li>Gần siêu thị</li>
+                            <li>Gần bệnh viện</li>
+                            <li>Gần bến xe</li>
+                            <li>Sân thượng</li>
+                        </ul>
+                    </div>
+                    <p class="big">Tiềm năng:</p>
+                    <div class="prd_content">
+                        <p>Vị trí thuận tiện kinh doanh, kết nối các công trình giao thông trọng điểm của Sài Gòn</p>
+                        <p>Khu thương mại sầm uất, lợi thế về khai thác thương mại rất cao</p>
+                    </div>
+                    <p class="big">Gía bán:</p>
+                    <div class="prd_content">
+                        <p>Giá bán 12,9 tỷ (còn thương lượng), tương đương 190tr/m2 (tính tổng diện tích sử dụng)</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="adv adv_r">
+            <p><a href="#"><img src="" alt=""></a></p>
+        </div>
+    </main>
+    <p id="btn_top"><img src="./images/btn_top.png" alt="Back To Top"></p>
+</div>
+<script type="text/javascript">
+// MAKE ADV ABSOLUTE
+$(document).ready(function(){
+    "use strict";
+    $('.prd_detail_img p a').click(function(){
+        $(this).parents().find('ul').toggleClass('active');
+    });
+
+    $('.prd_ct .big').click(function(){
+        $('.prd_content').stop().slideUp();
+        $(this).next('.prd_content').stop().slideToggle(500);
+    });
+});
+
+</script>
+</body>
+</html>
