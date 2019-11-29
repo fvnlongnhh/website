@@ -161,7 +161,14 @@ main{position: relative;z-index: 2}
 .prd_ct ul:last-child,
 .prd_ct p:last-child{margin-bottom: 0}
 
-
+/* PRIVACY PAGE */
+.privacy_ct{}
+.privacy_ct h4{color: #ea433c;font-weight: bold;font-size: 22px;margin-bottom: 30px;}
+.privacy_ct p{margin-bottom: 20px;}
+.privacy_ct ul{margin-bottom: 30px}
+.privacy_ct ul li{list-style: disc;margin-left: 15px;}
+.privacy_ct ul li.bold{font-size: 18px;font-weight: bold}
+.privacy_ct .bold.org{font-weight: bold;color: #ea433c;}
 /* LIST CHECK */
 .sub .list_check{display:block;}
 .sub .list_check li{display:inline-block;width:32%;padding-left:25px;margin-bottom:10px;position:relative;}
